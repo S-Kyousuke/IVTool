@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- Appraisal -->
+    <string name="app_name">IV Tool</string>
+    <string name="image_desc">Image</string>
+    <string name="pokemon">Pokémon</string>
+    <string name="edit_cp">CP</string>
+    <string name="edit_hp">HP</string>
+    <string name="edit_dust">Dust</string>
+    <string name="powered_up">Powered up</string>
+
+    <!-- Message -->
+    <string name="pokemon_select">Select Pokémon.</string>
+    <string name="dust_enter">Enter stardust to power up.</string>
+    <string name="cp_enter">Enter Pokemon CP.</string>
+    <string name="hp_enter">Enter Pokemon HP.</string>
+    <string name="pokemon_incorrect">Unknown pokemon!</string>
+    <string name="dust_incorrect">Incorrect stardust!</string>
+    <string name="cp_incorrect">CP doesn\'t match up with Dust!</string>
+
+    <!-- Result -->
+    <string name="see_results">See Results</string>
+    <string name="result_cp">CP\n%1$d</string>
+    <string name="result_hp">HP\n%1$d</string>
+    <string name="max_iv">Max IV</string>
+    <string name="min_iv">Min IV</string>
+    <string name="possible_combinations">%1$d possible combinations</string>
+    <string name="level">Level</string>
+    <string name="attack">Attack</string>
+    <string name="defense">Defense</string>
+    <string name="stamina">Stamina</string>
+    <string name="perfection">Perfection</string>
+    <string name="close">Close</string>
+
+    <!-- Appraisal -->
+    <string name="appraisal">Appraisal</string>
+    <string name="no_appraisal">No Appraisal</string>
+    <string name="best_stat_mystic">Its best attribute is its</string>
+    <string name="team">Team</string>
+    <string name="appraisal_wrong_message">\" No IV match up with an appraisal.\nPlease check your input. \"</string>
+    <string name="best_stat_valor_end">is its strongest feature.</string>
+    <string name="best_stat_valor_start">Its</string>
+    <string name="best_stat_instinct">Its best quality is its</string>
+    <string name="dot">.</string>
+    <string name="matched_stat_mystic">It is matched equally by its %1$s.</string>
+    <string name="matched_stat_valor">I\'m just as impressed with its %1$s.</string>
+    <string name="matched_stat_instinct">Its %1$s is great, too!</string>
+    <string name="hp_incorrect">HP doesn\'t match up with Dust!</string>
+    <string name="hp_incorrect_no_power">HP doesn\'t match up with Dust!\nHave you ever powered it up?</string>
+    <string name="cp_incorrect_no_power">CP doesn\'t match up with Dust!\nHave you ever powered it up?</string>
+    <string name="no_data">No Pokémon data found.\nPlease check your input.</string>
+    <string name="no_data_no_power">No Pokémon data found.\nHave you ever powered it up?</string>
+
+</resources>

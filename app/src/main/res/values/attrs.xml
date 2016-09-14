@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StatusSelector">
+        <attr name="fontSize" format="dimension"/>
+        <attr name="labelWidth" format="dimension"/>
+        <attr name="valueWidth" format="dimension"/>
+        <attr name="labelText" format="string"/>
+        <attr name="value" format="integer"/>
+        <attr name="thumb" format="reference"/>
+        <attr name="progressDrawable" format="reference"/>
+    </declare-styleable>
+</resources>

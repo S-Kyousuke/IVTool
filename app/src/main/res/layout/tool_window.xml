@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.skyousuke.ivtool.view.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:theme="@android:style/Theme.Holo"
+                                                android:background="@color/dimWhite"
+                                                android:paddingLeft="@dimen/activity_horizontal_margin"
+                                                android:paddingRight="@dimen/activity_horizontal_margin"
+                                                android:paddingTop="@dimen/activity_vertical_margin"
+                                                android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <AutoCompleteTextView
+        android:id="@+id/pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/dark_gray"
+        android:textColor="@color/black"
+        android:inputType="textNoSuggestions"
+        android:textSize="@dimen/large_text_size"
+        android:minEms="6"
+        android:maxLines="1"
+        android:completionThreshold="1"
+        android:imeOptions="actionNext"
+        android:hint="@string/pokemon"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/dust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edit_text_vertical_space"
+        android:layout_below="@id/pokemon"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_gray"
+        android:textSize="@dimen/normal_text_size"
+        android:minEms="5"
+        android:maxLines="1"
+        android:completionThreshold="1"
+        android:inputType="number"
+        android:maxLength="9"
+        android:imeOptions="actionNext"
+        android:hint="@string/edit_dust"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edit_text_vertical_space"
+        android:layout_below="@id/dust"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_gray"
+        android:minEms="4"
+        android:maxLines="1"
+        android:completionThreshold="1"
+        android:maxLength="9"
+        android:textSize="@dimen/normal_text_size"
+        android:inputType="number"
+        android:imeOptions="actionNext"
+        android:hint="@string/edit_cp"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edit_text_vertical_space"
+        android:layout_below="@id/cp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/dark_gray"
+        android:minEms="4"
+        android:maxLines="1"
+        android:completionThreshold="1"
+        android:maxLength="9"
+        android:textSize="@dimen/normal_text_size"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:hint="@string/edit_hp"/>
+
+    <TextView
+        android:id="@+id/max_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/pink_lemonade"
+        android:textSize="@dimen/iv_text_size"/>
+
+    <TextView
+        android:id="@+id/min_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/iv_text_size"
+        android:layout_below="@id/max_iv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/powered_up"
+        android:textSize="@dimen/normal_text_size"
+        android:layout_below="@id/min_iv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/checkbox_text_top_margin"
+        android:layout_marginStart="@dimen/horizontal_small_margin"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/powered"/>
+
+    <CheckBox
+        android:layout_width="@dimen/checkbox_size"
+        android:layout_height="@dimen/checkbox_size"
+        android:button="@null"
+        android:background="@drawable/checkbox"
+        android:layout_alignTop="@id/powered"
+        android:layout_toStartOf="@id/powered"
+        android:layout_marginTop="@dimen/checkbox_box_top_margin"
+        android:id="@+id/check_powered"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_text_size"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:layout_alignBottom="@id/hp"
+        android:paddingBottom="@dimen/message_bottom_padding"
+        android:gravity="end"
+        android:textAlignment="gravity"
+        android:id="@+id/message"/>
+
+    <ImageView
+        android:layout_width="@dimen/image_check_size"
+        android:layout_height="@dimen/image_check_size"
+        android:id="@+id/image_validation_pokemon"
+        android:contentDescription="@string/image_desc"
+        android:layout_marginStart="@dimen/horizontal_small_margin"
+        android:layout_alignBottom="@id/pokemon"
+        android:layout_toEndOf="@id/pokemon"
+        android:layout_marginBottom="@dimen/image_check_bottom_margin"/>
+
+    <ImageView
+        android:layout_width="@dimen/image_check_size"
+        android:layout_height="@dimen/image_check_size"
+        android:id="@+id/image_validation_dust"
+        android:contentDescription="@string/image_desc"
+        android:layout_marginStart="@dimen/horizontal_small_margin"
+        android:layout_alignBottom="@id/dust"
+        android:layout_toEndOf="@id/dust"
+        android:layout_marginBottom="@dimen/image_check_bottom_margin"/>
+
+    <ImageView
+        android:layout_width="@dimen/image_check_size"
+        android:layout_height="@dimen/image_check_size"
+        android:id="@+id/image_validation_cp"
+        android:contentDescription="@string/image_desc"
+        android:layout_marginStart="@dimen/horizontal_small_margin"
+        android:layout_alignBottom="@id/cp"
+        android:layout_toEndOf="@id/cp"
+        android:layout_marginBottom="@dimen/image_check_bottom_margin"/>
+
+    <ImageView
+        android:layout_width="@dimen/image_check_size"
+        android:layout_height="@dimen/image_check_size"
+        android:id="@+id/image_validation_hp"
+        android:contentDescription="@string/image_desc"
+        android:layout_marginStart="@dimen/horizontal_small_margin"
+        android:layout_alignBottom="@id/hp"
+        android:layout_toEndOf="@id/hp"
+        android:layout_marginBottom="@dimen/image_check_bottom_margin"/>
+
+    <ImageView
+        android:layout_width="@dimen/image_check_size"
+        android:layout_height="@dimen/image_check_size"
+        android:id="@+id/image_validation_power_up"
+        android:contentDescription="@string/image_desc"
+        android:layout_marginBottom="@dimen/image_check_checkbox_bottom_margin"
+        android:layout_marginEnd="@dimen/horizontal_small_margin"
+        android:layout_alignBottom="@id/powered"
+        android:layout_toStartOf="@id/check_powered"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/hp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/vertical_margin_small">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_text_size"
+            android:background="@drawable/custom_button"
+            android:paddingStart="@dimen/button_horizontal_padding"
+            android:paddingEnd="@dimen/button_horizontal_padding"
+            android:paddingTop="@dimen/button_vertical_padding"
+            android:paddingBottom="@dimen/button_vertical_padding"
+            android:text="@string/appraisal"
+            android:id="@+id/button_appraisal"
+            android:minHeight="0dp"
+            android:minWidth="0dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_text_size"
+            android:background="@drawable/custom_button"
+            android:paddingStart="@dimen/button_horizontal_padding"
+            android:paddingEnd="@dimen/button_horizontal_padding"
+            android:paddingTop="@dimen/button_vertical_padding"
+            android:paddingBottom="@dimen/button_vertical_padding"
+            android:text="@string/see_results"
+            android:id="@+id/button_tool"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:layout_marginStart="@dimen/horizontal_margin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/hp"
+        android:id="@+id/appraisal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:id="@+id/team_select">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text_size"
+                android:layout_marginEnd="@dimen/horizontal_small_margin"
+                android:layout_marginStart="@dimen/spinner_left_margin"/>
+
+            <Spinner
+                android:layout_width="@dimen/spinner_team_width"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/horizontal_small_margin"
+                android:gravity="center_horizontal"
+                android:id="@+id/spinner_team"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appraisal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_text_size"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/spinner_iv_phrase"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/vertical_margin_small"
+            android:id="@+id/spinner_stats_phrase"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/dark_gray"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="@string/appraisal_wrong_message"
+            android:layout_marginTop="@dimen/vertical_margin_small"
+            android:id="@+id/appraisal_wrong"/>
+
+    </LinearLayout>
+
+</com.skyousuke.ivtool.view.CustomRelativeLayout>

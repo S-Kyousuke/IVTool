@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/table_vertical_padding"
+    android:paddingBottom="@dimen/table_vertical_padding"
+    android:paddingStart="@dimen/table_horizontal_padding"
+    android:paddingEnd="@dimen/table_horizontal_padding"
+    android:id="@+id/list_result_header" >
+
+    <TextView
+        style="@style/TableText"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:id="@+id/iv_row_level"/>
+
+    <TextView
+        style="@style/TableText"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_row_attack"/>
+
+    <TextView
+        style="@style/TableText"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_row_defense"/>
+
+    <TextView
+        style="@style/TableText"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_row_stamina"/>
+
+    <TextView
+        style="@style/TableText"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv_row_percent"/>
+
+</LinearLayout>
